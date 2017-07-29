@@ -1,0 +1,530 @@
+/* 
+	Custom Style CSS. 
+	This will override the BootStrap CSS style.
+*/
+
+
+
+/* ==================================== Nav bar  ==================================== */
+.navbar-default
+{
+	box-shadow: none; 
+	background-color: transparent;
+	border: none; 
+	min-height: 90px; 
+	padding-top: 20px;
+	
+	 
+	transition: 1s all ease;
+}
+
+.nav > li > a
+{
+	font-family: 'Roboto', sans-serif; /* Adding with google fonts */
+	font-weight: 700; 
+	
+	text-transform: uppercase;
+	color: #ffffff; 
+	font-size: 1.3em;
+	text-shadow: 1px 1px 1px black; 
+	-webkit-text-shadow: 1px 1px 1px black; 
+	-moz-text-shadow: 1px 1px 1px black; 
+}
+
+/* 
+	Targetting the dynamic "active" class when you scroll. Please see the action in 
+	the Developer Console. 
+	Source: <body data-spy="scroll" data-target=".navbar" > 
+*/
+.nav > li.active
+{
+   background-color: #08192D;
+   transition: 1s all ease;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus
+{
+   background-color: transparent;
+}
+
+/* Applying the gradient Shadow for slide */
+section#slider
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#133d5a+0,0c223b+100 */
+	background: #133d5a; /* Old browsers */
+	background: -moz-linear-gradient(top, #133d5a 0%, #0c223b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #133d5a 0%,#0c223b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #133d5a 0%,#0c223b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#133d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
+	
+	min-height: 700px; 
+	padding: 100px 0; 
+}
+
+/* Making the image to the center */
+section#slider img 
+{
+	margin: 0 auto; 
+}
+
+/* ==================================== Body Section ==================================== */
+
+/* Adding space between the section */
+body > section 
+{
+	clear: both; 
+	padding: 50px 0;
+}
+
+/* ==================================== About Section ==================================== */
+
+/* Adding the Underline under the titles */
+h2, h3 
+{
+	font-family: 'Roboto', sans-serif; /* Adding with google fonts */
+	color: #15365B; 
+	margin-bottom: 30px; 
+}
+
+h2:after, 
+h3:after
+{
+	content: ""; 
+	height: 5px; 
+	width: 40px; 
+	background-color: #15365B; 
+	display: block;
+	margin: 0 auto; 
+	margin-top: 8px; 
+}
+
+/* Blue circlke */
+.blue-circle
+{
+	width: 100%; 	
+	padding-bottom: 100%; 
+	background-color: #15365B; 
+	border-radius: 50%;			/* Transforming the square to circle */
+	-moz-border-radius: 50%;			/* Transforming the square to circle */
+	-webkit-border-radius: 50%;			/* Transforming the square to circle */
+		
+	margin: 0 auto;
+}
+
+.blue-circle div
+{
+	float: left; 
+	width: 100%; 
+	padding-top: 45%; 
+	line-height: 1em; 
+	margin-top: -0.5em; 
+	text-align: center; 
+	color: #ffffff;
+}
+
+.blue-circle div i
+{
+	font-size: 3.5em; 
+}
+
+#features .blue-circle div i
+{
+	font-size: 2.5em; 
+}
+
+/* Making the circle smaller */
+#about .blue-circle
+{
+	width: 50%;
+	padding-bottom: 50%;
+}
+
+/* ==================================== Feature Section ==================================== */
+section#features
+{
+	background-color: #DfDfDf;
+}
+
+h4
+{
+	color: #15365B; 
+}
+.item-feature
+{
+	margin-bottom: 30px;
+}
+
+/* ==================================== Screen Section ==================================== */
+
+/* Making the image to the center */
+.modal-body
+{
+	text-align: center;
+}
+
+section#download .platforms > div
+{
+	border-radius: 20px; 
+	border: 3px solid #15365B; 
+}
+
+
+
+/* ====================================  Parallax Section ==================================== */
+section#parallax 
+{
+	height: 500px; 
+	background-image: url(../img/ipadApp.jpg); 
+	
+	/* Adding the effects */
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-size: cover; 		/* full size of the width */
+}
+
+h2.parallax
+{
+	font-size: 3.6em; 
+	color: #ffffff; 
+	font-weight: 700;
+	
+	/* CSS3 properties */
+	text-shadow: 0px 7px 8px black; 
+	-webkit-text-shadow: 0px 7px 8px black; 
+	-moz-text-shadow: 0px 7px 8px black; 
+}
+
+h2.parallax:after
+{
+	display: none;
+}
+
+/* ====================================  Download Section ==================================== */
+section#download 
+{
+	padding-bottom: 0; 
+}
+
+section#download .content-downloads
+{
+	height: 700px; 
+	position: relative;
+}
+
+section#download div.phone
+{
+	position: relative; 
+	
+	width: 50%; 
+	float: left;
+	height: 100%;
+	
+	/* Adding the shadow between the 2 divs */
+	box-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, 0.15); 
+	-webkit-box-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, 0.15); 
+	-moz-box-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, 0.15); 
+}
+
+section#download div.phone img
+{
+	position: absolute; 
+	bottom: 0; 
+}
+
+section#download .downloads-empty
+{
+	width: 50%; 
+	background-color: #DfDfDf; 
+	float: right; 
+	height: 100%;
+	z-index: 2; 
+	background-image: url(../img/downloadAppBG.png); 
+	background-repeat: no-repeat; 
+	background-position: bottom right; 
+}
+
+/* Moving the text */
+section#download .download
+{
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	margin: 0 auto; 
+	top: 50px; 
+}
+
+/*
+	This will apply the text to round button style. 
+	Applying the CSS style to only child (div). 
+	The rest of the div tags won't effect. 
+*/
+section#download .platforms > div
+{
+	border-radius: 20px; 
+	border: 3px solid #15365B; 
+	padding: 11px 0; 
+	font-size: 1.2em; 
+	position: relative; 
+	padding-left: 50px; 
+	color: #0C243B; 
+}
+
+section#download .platforms i
+{
+	font-size: 2.5em; 
+	position: absolute; 
+	left: 20px; 
+	top: 12px; 
+}
+
+/* ====================================  Form Section ==================================== */
+
+section#support 
+{
+	padding-bottom: 0; 
+	background-color: #1A3D61; 
+}
+
+section#support h2
+{
+	color: #ffffff; 
+}
+
+section#support h2:after
+{
+	background-color: #ffffff; 
+}
+
+section#support p
+{
+	font-size: 1.6em; 
+	color: #ffffff; 
+	margin-bottom: 30px;
+}
+
+section#support input, 
+section#support textarea
+{
+	min-height: 50px; 
+	margin-bottom: 20px;
+	
+	background-color: #1A3D61;
+	
+	border: 2px solid #ffffff; 
+	border-radius: 20px;
+	
+	/* Text Color inside the controls */
+	color: #ffffff;
+}
+
+section#support textarea
+{
+	min-height: 300px;
+}
+
+section#support input.btn
+{
+	background-color: #ffffff; 
+	border-radius: 25px; 
+	padding: 5px 50px; 
+	font-size: 1.4em; 
+	
+	color: #1A3D61;
+}
+
+.has-success .form-control-feedback
+{
+	color: #ffffff; 
+	background-color: green; 
+	border-radius: 50%; 
+}
+
+.has-error .form-control-feedback
+{
+	color: yellow; 
+	background-color: red; 
+	border-radius: 50%; 
+}
+
+/* Adjusting the icons position to middle */
+.form-horizontal .has-feedback .form-control-feedback
+{
+	top: 8px !important; 
+	right: 22px !important; 
+	font-size: 1.5em; 
+}
+
+.has-error .help-block
+{
+	color: white; 
+	background-color: red; 
+	padding: 10px; 
+	border-radius: 10px; 
+}
+
+:moz-placeholder
+{
+	color: #ffffff !important; 
+}
+
+::-webkit-input-placeholder
+{
+	color: #ffffff !important; 
+}
+
+::moz-placeholder
+{
+	color: #ffffff !important; 
+}
+
+:ms-input-placeholder
+{
+	color: #ffffff !important; 
+}
+
+/* ====================================  Footer Section ==================================== */
+footer padding
+{
+	background-color: #102745; 
+	padding: 10px 0; 
+	color: #ffffff; 
+	
+	margin-bottom: 0; 
+}
+
+/* ====================================  Dynamic Class Section ================================ */
+.effect
+{
+	background-color: #123156; 
+	min-height: 30px; 
+	box-shadow: 0 0 10px black; 
+	padding-top: 0; 
+}
+
+/* ==================================== Animation ====================================*/
+
+.animation1, 
+.animation2, 
+.animation3
+{
+	opacity: 0; 
+}
+
+.animation1
+{
+}
+
+.animation2
+{
+	animation-delay: 0.3s; 
+	-webkit-animation-delay: 0.3s; 
+	-moz-animation-delay: 0.3s; 
+}
+
+.animation3
+{
+	animation-delay: 0.6s; 
+	-webkit-animation-delay: 0.6s; 
+	-moz-animation-delay: 0.6s; 
+}
+
+
+/* ==================================== Mobile Styles ====================================*/
+
+@media(max-width: 767px) 
+{
+	.navbar-default .navbar-collapse
+	{
+		border: none; 
+	}
+	
+	.navbar-collapse.in, 
+	.collapsing
+	{
+		background-color: #112741; 
+	}
+	
+	.navbar-default .navbar-toggle:hover
+	{
+		background: transparent; 
+	}
+	
+	.navbar-default .navbar-toggle:focus
+	{
+		background-color: #112741; 
+	}
+	
+	.navbar-default .navbar-toggle .icon-bar 
+	{
+		background-color: #ffffff; 
+	}
+	
+	
+	/* Blue circlke */
+	#about .blue-circle,
+	.blue-circle
+	{
+		width: 50%; 	
+		padding-bottom: 50%; 
+	}
+	
+	.features-image
+	{
+		text-align: center;
+	}
+
+	section#features h4,
+	section#features p
+	{
+		text-align: center;
+	}
+	
+	/* ================== Download Section ================== */
+	
+	section#download .content-downloads
+	{
+		height: 600px;
+	}
+	
+	
+	section#download div.phone,
+	section#download .downloads-empty
+	{
+		width: 100%;
+	}
+	
+	section#download .downloads-empty
+	{
+		position: relative;
+	}
+	
+	section#download .download 
+	{		
+		top: 600px;
+		z-index: 10;
+	}
+	
+	section#download .platforms > div 
+	{		
+		margin-bottom: 10px;
+	}
+	
+	section#download .platforms i 
+	{		
+		top: 2px;
+	}
+	
+	/* =================== Parallax ============================== */
+	section#parallax
+	{
+		background-attachment: scroll;
+	}
+}
+
+
+}
+@media(min-width: 768px) {}
+
+@media(min-width: 992px) {}
+@media(min-width: 1200px) {}

@@ -1,0 +1,572 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrapValidator.css">
+        <link rel="stylesheet" href="css/myStyle.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+	
+	<!-- 
+		data-spy="scroll": will create the "active" class dynamictically when you scroll. 
+		It is targetting "navbar" class. 
+	-->
+    <body data-spy="scroll" data-target=".navbar" >
+			
+		<!-- ================================================================================== -->
+		<!-- Adding the Navigation bar -->
+		<header> 
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					
+					<!-- 
+						Menu bar for the small screen sizes. 
+						data-target=".navbar-collapse": is calling the class name {.navbar-collapse}
+					-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only"> Toggle Navigation </span>
+							
+							<!-- Button with 3 lines on the mobile menu -->
+							<span class="icon-bar"> </span>
+							<span class="icon-bar"> </span>
+							<span class="icon-bar"> </span>
+						</button>
+					</div> <!-- End navbar-header -->
+				
+					<div class="navbar-collapse collapse">
+						<ul class="nav nav-justified">
+							<li> <a data-scroll href="#about"> About the app </a></li>
+							<li> <a data-scroll href="#features"> Features </a></li>
+							<li> <a data-scroll href="#screenshots"> Screenshots </a></li>
+							<li> <a data-scroll href="#download"> Download </a></li>
+							<li> <a data-scroll href="#support"> Support </a></li>
+						</ul>
+					</div> <!-- End navbar-collapse -->
+				</div> 
+				
+				
+			</nav>
+		</header>
+		
+		<!-- ================================================================================== -->
+		
+		<!-- 
+			Image sliding section 
+			data-ride="carousel": is inside the "bootstrap.min.js". It is a function in JS. 
+		-->
+		
+		<section id="slider" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/slider_1.png" />
+				</div>
+				
+				<div class="item">
+					<img src="img/slider_2.png" />
+				</div>
+				
+				<div class="item">
+					<img src="img/slider_3.png" />
+				</div>
+			</div>
+			
+			<!-- Prev (left) button for images slider -->
+			<a class="left carousel-control" href="#slider" role="button" data-slide="prev"> 
+				<!-- glyphicon: inside the font folder. -->
+				<span class="glyphicon glyphicon-chevron-left" > </span>
+			</a>
+			
+			<!-- Next(Right) button for images slider -->
+			<a class="right carousel-control" href="#slider" role="button" data-slide="next"> 
+				<!-- glyphicon: inside the font folder. -->
+				<span class="glyphicon glyphicon-chevron-right" > </span>
+			</a>
+			
+			<!-- Adding the indicator like a dots -->
+			<ol class="carousel-indicators" >
+				<li data-target="#slider" data-slide-to="0" class="active" > </li>
+				<li data-target="#slider" data-slide-to="0" > </li>
+				<li data-target="#slider" data-slide-to="0" > </li>
+			</ol>
+			
+		</section>
+		
+		 
+		<!-- ================================================================================== -->
+		
+		<!-- Adding the section --> 
+		<section id="about" class="about">			
+			<div class="container">
+					<!-- Adding the rows --> 
+					<div class="row">
+						<div class="col-sm-4">
+						<!-- Facebook & Twitter section -->
+						
+							<div>
+								<!-- 
+									Adding a blue circle 
+									animation1 class: defines in myStyle.css
+								--> 
+								<div class="blue-circle animation1"> 
+									<div> 
+										<i class="fa fa-facebook"></i> 
+										<i class="fa fa-twitter"></i> 
+										<i class="fa fa-google-plus"></i> 
+									</div> 
+								</div>
+							
+								<h3 class="text-uppercase text-center"> Facebook & Twitter </h3>
+								<p class="text-center"> 
+									Integer tempus arcu justo, nec egestas neque consectetur eget. 
+									Integer portitor mollis ut ultricies elit elementum nec.ut ultricies.				
+								</p>
+							</div>
+						</div> 
+				
+					
+					<div class="col-sm-4">
+					<!-- Online support -->				
+					<div>
+						<!-- Adding a blue circle --> 
+						<div class="blue-circle animation2"> 
+							<div> 
+								<i class="fa fa-check"></i> 
+							</div>
+						</div>
+					
+						<h3 class="text-uppercase text-center"> Online Support </h3>
+						<p class="text-center">  
+							Integer tempus arcu justo, nec egestas neque consectetur eget. 
+							Integer portitor mollis ut ultricies elit elementum nec.ut ultricies.				
+						</p>
+					</div>
+			
+					</div> 
+					
+					<div class="col-sm-4">
+						<!-- iOS & Android -->
+						<div>
+							<!-- Adding a blue circle --> 
+							<div class="blue-circle animation3"> 
+								<div> 
+									<i class="fa fa-apple"></i> 
+									<i class="fa fa-android"></i> 
+								</div> 
+							</div>
+						
+							<h3 class="text-uppercase text-center"> iOS & Android </h3>
+							<p class="text-center"> 
+								Integer tempus arcu justo, nec egestas neque consectetur eget. 
+								Integer portitor mollis ut ultricies elit elementum nec.ut ultricies.				
+							</p>
+						</div>
+					</div> 						
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+			
+		</section><!-- End about -->
+		
+		<!-- ================================================================================== -->
+		
+		<section id="features" class="features">
+			<h2 class="text-center text-uppercase" > Features </h2>
+			
+			<div class="container">
+				<div class="row" >
+				
+					<div class="left-features col-sm-4" > 
+					
+						<div class="item-feature row" >						
+							
+							<div class="content col-sm-8" >
+								<h4 class="text-uppercase" > Facebook & Twitter </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4">
+								<div class="blue-circle animation1" >
+									<div> 
+										<i class="fa fa-facebook"></i> 
+										<i class="fa fa-twitter"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>	
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						 
+							<div class="content col-sm-8" >
+								<h4 class="text-uppercase" > User Points </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4">
+								<div class="blue-circle animation1" >
+									<div> 
+										<i class="fa fa-user"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						
+							
+							<div class="content col-sm-8" >
+								<h4 class="text-uppercase" > Buy Tickets Online </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4">
+								<div class="blue-circle animation1" >
+									<div> 
+										<i class="fa fa-ticket"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>	
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						
+							
+							<div class="content col-sm-8" >
+								<h4 class="text-uppercase" > Play movie trailors </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4">
+								<div class="blue-circle animation1" >
+									<div> 
+										<i class="fa fa-youtube-play"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>	
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						
+							<div class="content col-sm-8" >
+								<h4 class="text-uppercase" > Check seat availability </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4">
+								<div class="blue-circle animation1" >
+									<div> 
+										<i class="fa fa-check-circle-o"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>	
+							
+						</div>
+						
+					</div> <!-- left-features -->												
+				
+
+					<!-- ========================================================================= -->
+					
+					<div class="features-image col-sm-4 text-center" > 
+						<img src="img/features.png" />
+					</div> <!-- features-image -->
+					
+					<!-- ========================================================================= -->
+
+					<div class="right-features col-sm-4" > 
+						<div class="item-feature row" >						
+							<div class="content col-sm-8 col-sm-push-4 text-right" >
+								<h4 class="text-uppercase" > Pay With Credit Card </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4 col-sm-pull-8">
+								<div class="blue-circle animation2" >
+									<div> 
+										<i class="fa fa-credit-card"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						
+							
+							<div class="content col-sm-8 col-sm-push-4 text-right" >
+								<h4 class="text-uppercase" > Rate The Movie </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4 col-sm-pull-8">
+								<div class="blue-circle animation2" >
+									<div> 
+										<i class="fa fa-thumbs-up"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>	
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >
+						
+							<div class="content col-sm-8 col-sm-push-4 text-right" >
+								<h4 class="text-uppercase" > Reward Points</h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4 col-sm-pull-8">
+								<div class="blue-circle animation2" >
+									<div> 
+										<i class="fa fa-exchange"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>
+							
+						</div> <!-- item-feature -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						
+							<div class="content col-sm-8 col-sm-push-4 text-right" >
+								<h4 class="text-uppercase" > Check In Integrated </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4 col-sm-pull-8">
+								<div class="blue-circle animation2" >
+									<div> 
+										<i class="fa fa-check-square-o"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>							
+						</div> <!-- item-feature -->	
+						
+						<!-- ================================================================================== -->
+						
+						<div class="item-feature row" >						
+							
+							<div class="content col-sm-8 col-sm-push-4 text-right" >
+								<h4 class="text-uppercase" > Access all promos </h4>
+								<p> Mollis elit, ut ultricies elit elkementum nec.ut ultricies </p>
+							</div> <!-- content -->
+							
+							<!-- ================================================================================== -->
+							
+							<div class="col-sm-4 col-sm-pull-8">
+								<div class="blue-circle animation2" >
+									<div> 
+										<i class="fa fa-tag"></i> 
+									</div> 
+								</div> <!-- blue-circle -->
+							</div>							
+						</div> <!-- item-feature -->	
+					
+					</div> <!-- right-features -->
+				</div> <!-- End row -->
+				
+			</div> <!-- End container -->
+			
+		
+		</section><!-- End features -->
+		
+		<!-- ================================================================================== -->
+		
+		<section id="screenshots" class="screenshots">
+			<h2 class="text-center text-uppercase" > Screenshots </h2>
+			
+			<div class="container">
+				<div class="row">
+					
+					<!-- Adding the screenshots images -->
+					<div class="col-xs-4 animation1">
+						<!-- Linking with modal and control with JS. See the function inside "main.js" -->
+						<a href="#modal" data-toggle="modal" data-image-url="img/modal_tickets.png">
+							<img class="img-responsive" src="img/modal_tickets.png" alt="" />
+						</a>
+					</div>
+					
+					<!-- ================================================================================== -->
+					
+					<div class="col-xs-4 animation2">
+						<!-- Linking with modal -->
+						<a href="#modal" data-toggle="modal" data-image-url="img/modal_trailers.png" >
+							<img class="img-responsive" src="img/modal_trailers.png" alt="" />
+						</a>
+					</div>
+					
+					<!-- ================================================================================== -->
+					
+					<div class="col-xs-4 animation3">
+						<!-- Linking with modal -->
+						<a href="#modal" data-toggle="modal" data-image-url="img/modal_points.png" >
+							<img class="img-responsive" src="img/modal_points.png" alt="" />
+						</a>
+					</div>
+					
+				</div> <!-- End row -->
+			</div><!-- End container -->
+			
+			<!-- Adding the modal: when the user click on the image it will appear the another image. -->
+			<div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+				<div class="modal-body">
+				
+					<!-- Adding the class for an responsive image -->
+					<img src="#" class="img-responsive" />
+					
+					<!-- Close button -->
+					<button class="btn" data-dismiss="modal" aria-hidden="true"> Close </button>
+				</div>
+			</div>
+		
+		</section><!-- End screenshots -->
+		
+		
+		<!-- ================================================================================== -->
+		
+		<!-- Working with the parallax effect when you scroll down -->
+		<section id="parallax" class="parallax">
+			<h2 class="parallax text-center"> Also available for iPad </h2>
+		</section>
+		
+		<!-- ================================================================================== -->
+		
+		<!-- Download section -->
+		<section id="download" class="download">
+			<h2 class="text-center text-uppercase"> Download </h2>
+			
+			<!-- container-fluid: onl takes the full width of the browser -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="content-downloads clearfix">
+						
+						<div class="phone">
+							<img class="img-responsive animation1" src="img/download.png" />
+						</div> <!-- End phone -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="downloads-empty">
+						
+						</div> <!-- End downloads-empty -->
+						
+						<!-- ================================================================================== -->
+						
+						<div class="container download">
+							<div class="row">
+								<div class="col-md-5 col-sm-offset-7">
+									<h2 class="text-center text-uppercase"> Choose your platform </h2>
+									
+									<section class="platforms text-center">
+										<div class="col-md-5 col-sm-6 col-sm-6 col-xs-10 col-xs-offset-1 animation1">
+											<i class="fa fa-apple"></i>
+											Download for  <b> Apple iOS </b>
+										</div>
+										
+										<div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-10 col-xs-offset-1 animation2">
+											<i class="fa fa-android"></i>
+											Download for  <b> Android </b>
+										</div>
+									</section>
+									
+								</div>
+							</div> <!-- End row -->
+						</div> <!-- End container -->																
+					</div> <!-- End content-downloads -->
+				</div> <!-- End row -->
+			</div> <!-- End container-fluid -->			
+		</section>
+		
+		<!-- ================================================================================== -->
+		
+		<!-- Support section --> 
+		<section id="support" class="support">
+			<h2 class="text-center text-uppercase"> Support </h2>
+			<p class="text-center" > Please fill out the enquery form </p>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<form id="form" class="form-horizontal" action="ajaxSubmit.php">
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Name" name="name" required />
+							</div>
+							
+							<div class="form-group">
+								<input class="form-control" type="email" placeholder="Email" name="email" required />
+							</div>
+							
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Message" name="message" required > </textarea>
+							</div>
+							<div class="form-group">
+								<input class="btn btn-default" type="submit" value="Send" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> <!-- End container -->
+		</section>
+		
+		
+		<!-- ================================================================================== -->
+		
+		<footer>
+			<p class="text-uppercase text-center"> All Rigths Reserved 2017 </p>
+		</footer>
+		
+		<!-- ================================================================================== -->
+		
+		
+		
+		
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>        <!-- Download it form GitHub: cferdinandi/smooth-scroll  -->
+        <script src="js/jquery.waypoints.min.js"></script> <!-- Download it form GitHub: imakewebthings/waypoints --> 
+        <script src="js/bootstrapValidator.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
