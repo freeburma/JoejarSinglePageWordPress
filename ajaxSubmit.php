@@ -13,7 +13,7 @@
 	$comment .= "E-mail it's : " . $email . "\r\n"; 
 	$comment .= "Message is : " . $message . "\r\n"; 
 	
-	$for "kophyoblue@gmail.com"; 
+	$for "hello@gmail.com"; 
 	$subject = "Contact from website"; 
 	
 	mail($subject, utf8_decode($comment), $header); 

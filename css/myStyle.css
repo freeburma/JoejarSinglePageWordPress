@@ -175,7 +175,7 @@ section#download .platforms > div
 section#parallax 
 {
 	height: 500px; 
-	background-image: url(../img/ipadApp.jpg); 
+	/* background-image: url(../img/ipadApp.jpg); */
 	
 	/* Adding the effects */
 	background-repeat: no-repeat; 
@@ -239,7 +239,7 @@ section#download .downloads-empty
 	float: right; 
 	height: 100%;
 	z-index: 2; 
-	background-image: url(../img/downloadAppBG.png); 
+	/* background-image: url(../img/downloadAppBG.png); */
 	background-repeat: no-repeat; 
 	background-position: bottom right; 
 }
@@ -270,6 +270,18 @@ section#download .platforms > div
 	color: #0C243B; 
 }
 
+
+
+section#download .platforms a
+{
+	color: #15365B; 
+}
+
+section#download .platforms a:hover
+{
+	text-decoration: none; 
+}
+
 section#download .platforms i
 {
 	font-size: 2.5em; 
@@ -279,7 +291,15 @@ section#download .platforms i
 }
 
 /* ====================================  Form Section ==================================== */
-
+.caldera-grid .has-error .checkbox, .caldera-grid .has-error .checkbox-inline, 
+.caldera-grid .has-error .control-label, .caldera-grid .has-error .form-control-feedback, 
+.caldera-grid .has-error .help-block, .caldera-grid .has-error .radio, .caldera-grid .has-error 
+.radio-inline, .caldera-grid .has-error.checkbox label, 
+.caldera-grid .has-error.checkbox-inline label, 
+.caldera-grid .has-error.radio label, .caldera-grid .has-error.radio-inline label
+{
+	color: #ffffff !important; 
+}
 section#support 
 {
 	padding-bottom: 0; 
@@ -296,11 +316,12 @@ section#support h2:after
 	background-color: #ffffff; 
 }
 
-section#support p
+section#support .single div
 {
 	font-size: 1.6em; 
-	color: #ffffff; 
+	color: red; 
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 section#support input, 
